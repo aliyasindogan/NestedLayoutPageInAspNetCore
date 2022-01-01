@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+
+    <div class="col-sm-3">
+
+        <div id="electronicsnav" class="list-group ">
+            <a class="list-group-item list-group-item-action" asp-action="Nested1" asp-controller="Nested">Nested 1</a>
+            <a class="list-group-item list-group-item-action" asp-action="Nested2" asp-controller="Nested">Nested 2</a>
+            <a class="list-group-item list-group-item-action" asp-action="Nested3" asp-controller="Nested">Nested 3</a>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div id="electronics" class="jumbotron p-3">
+            @RenderBody()
+        </div>
+    </div>
+</div>
